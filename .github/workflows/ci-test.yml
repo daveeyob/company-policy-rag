@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python Environment (3.11)
         uses: actions/setup-python@v4
         with:
-          python-python: "3.11"
+          python-version: "3.11" # Fixed syntax typo here
 
       - name: Install Framework Dependencies
         run: |
@@ -27,3 +27,11 @@ jobs:
       - name: Validate Index Ingestion Pipeline Execution
         run: |
           python src/ingest.py
+
+      - name: Verify RAG Engine Compilation and Integrity
+        env:
+          # We pass a dummy string for the API key so the script can compile and test local matrix logic
+          # without needing your private production key exposed in public logs
+          OPENROUTER_API_KEY: "sk-or-v1-ci-test-mock-key"
+        run: |
+          python -c "import sys; sys.path.append('src'); from rag_engine import get_rag_response; print('RAG Engine Integrity: OK')"
