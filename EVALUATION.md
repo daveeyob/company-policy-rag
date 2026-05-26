@@ -1,22 +1,28 @@
 # System Evaluation Report: Himbol Policy RAG
     
 ## Performance Metrics
-* **Total Queries Evaluated:** 10
-* **Average Latency (p50):** 21988.74 ms
-* **Tail Latency (p95):** 77194.40 ms
+* **Total Queries Evaluated:** 16
+* **Average Latency (p50):** 10947.48 ms
+* **Tail Latency (p95):** 21105.49 ms
 * **Groundedness Score:** 100% Pass
 * **Citation Accuracy Score:** 100% Pass
 
 ## Detailed Query Log
 | # | Test Query | Latency | Groundedness | Citation Accuracy | Response Preview |
 |---|------------|---------|--------------|-------------------|------------------|
-| 1 | `What is the daily transaction limit for Tier 1 wallets on M-Nakfa?` | 19686.4ms | Pass | Pass | The daily transaction limit for Tier 1 wallets is **5,000 ER... |
-| 2 | `how do you handle cash valuts` | 9976.6ms | Pass | Pass | I can only answer about our policies.... |
-| 3 | `what is the netwrok policy` | 2.0ms | Pass | Pass | I can only answer about our policies.... |
-| 4 | `What are the core operating hours for remote work?` | 22010.9ms | Pass | Pass | I can only answer about our policies.... |
-| 5 | `What is the daily per-diem allowance for field operations travel?` | 17300.2ms | Pass | Pass | The daily per‑diem allowance for field operations travel is ... |
-| 6 | `Do we have a code of conduct for accepting gifts?` | 77194.4ms | Pass | Pass | Yes. According to Himbol's Corporate Code of Conduct, accept... |
-| 7 | `What happens during a power outage disruption?` | 28917.3ms | Pass | Pass | During a power outage, the following procedures apply:  1. *... |
-| 8 | `How do mobile agents handle hardware assets?` | 21445.5ms | Pass | Pass | Mobile agents are issued encrypted mobile tracking devices a... |
-| 9 | `Can I carry over 10 days of annual leave to next year?` | 17878.1ms | Pass | Pass | I can only answer about our policies.... |
-| 10 | `What is the recipe for making traditional Eritrean Zigni?` | 5476.0ms | Pass | Pass | I can only answer about our policies.... |
+| 1 | `What is the daily transaction limit for Tier 1 wallets on M-Nakfa?` | 7884.4ms | Pass | Pass | The daily transactionlimit for Tier 1 wallets is 5,000 ERN. ... |
+| 2 | `how do you handle cash valuts` | 16724.4ms | Pass | Pass | I can only answer about our policies.... |
+| 3 | `what is the netwrok policy` | 4.6ms | Pass | Pass | I can only answer about our policies.... |
+| 4 | `What are the core operating hours for remote work?` | 13146.1ms | Pass | Pass | I can only answer about our policies. [himbol_remote_banking... |
+| 5 | `What is the daily per-diem allowance for field operations travel?` | 10506.2ms | Pass | Pass | The daily per‑diem allowance for field operations travel is ... |
+| 6 | `Do we have a code of conduct for accepting gifts?` | 19387.3ms | Pass | Pass | Yes, Himbol maintains a policy regarding gifts. All represen... |
+| 7 | `What happens during a power outage disruption?` | 21105.5ms | Pass | Pass | [himbol_disaster_recovery.md]   During a power outage, backu... |
+| 8 | `How do mobile agents handle hardware assets?` | 5166.2ms | Pass | Pass | I can only answer about our policies.... |
+| 9 | `Can I carry over 10 days of annual leave to next year?` | 10945.2ms | Pass | Pass | I can only answer about our policies.... |
+| 10 | `What is the recipe for making traditional Eritrean Zigni?` | 10316.6ms | Pass | Pass | I can only answer about our policies.... |
+| 11 | `What is the annual leave plan?` | 7526.2ms | Pass | Pass |  I can only answer about our policies. ... |
+| 12 | `Do you have any disaster recovery plan?` | 17579.4ms | Pass | Pass | Yes, the disaster recovery plan is outlined in [himbol_disas... |
+| 13 | `How do you spell your company name?` | 15225.5ms | Pass | Pass | I can only answer about our policies. [himbol_company_name.m... |
+| 14 | `Do you have any remittance aml?` | 6849.1ms | Pass | Pass | I can only answer about our policies.... |
+| 15 | `How do you handle customer dispute?` | 5127.5ms | Pass | Pass | I can only answer about our policies.... |
+| 16 | `Where would I get more information about the company?` | 7665.6ms | Pass | Pass | I can only answer about our policies.... |

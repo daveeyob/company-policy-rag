@@ -15,7 +15,13 @@ def run_evaluation():
         "What happens during a power outage disruption?",
         "How do mobile agents handle hardware assets?",
         "Can I carry over 10 days of annual leave to next year?",
-        "What is the recipe for making traditional Eritrean Zigni?" 
+        "What is the recipe for making traditional Eritrean Zigni?" ,
+        "What is the annual leave plan?",
+        "Do you have any disaster recovery plan?",
+        "How do you spell your company name?",
+        "Do you have any remittance aml?",
+        "How do you handle customer dispute?",
+        "Where would I get more information about the company?"
     ]
     
     results = []
